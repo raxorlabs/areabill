@@ -4,148 +4,243 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>AreaBill - Sqft & Bill Calculator</title>
 
 <style>
-body{
+
+*{
     margin:0;
-    font-family:Arial, sans-serif;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
     background:#f4f7fb;
     color:#222;
+    line-height:1.6;
 }
 
 .hero{
-    background:linear-gradient(135deg,#0d47a1,#1565c0);
+    background:linear-gradient(
+    135deg,
+    #071f4f 0%,
+    #0d47a1 40%,
+    #1565c0 100%
+    );
     color:white;
     text-align:center;
-    padding:50px 20px;
+    padding:70px 20px;
 }
 
 .logo{
-    width:140px;
-    border-radius:28px;
-    box-shadow:0 10px 30px rgba(0,0,0,.25);
+    width:160px;
+    border-radius:32px;
+    box-shadow:0 15px 40px rgba(0,0,0,.35);
 }
 
-h1{
-    margin-top:20px;
-    font-size:42px;
+.hero h1{
+    margin-top:24px;
+    font-size:48px;
 }
 
 .subtitle{
+    margin-top:10px;
     font-size:20px;
-    opacity:.9;
+    opacity:.95;
 }
 
 .container{
-    max-width:900px;
+    max-width:1100px;
     margin:auto;
     padding:40px 20px;
 }
 
 .card{
     background:white;
-    border-radius:16px;
-    padding:25px;
-    margin-bottom:20px;
-    box-shadow:0 2px 12px rgba(0,0,0,.08);
+    border-radius:18px;
+    padding:30px;
+    margin-bottom:30px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.card h2{
+    color:#0d47a1;
+    margin-bottom:15px;
 }
 
 .features{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:15px;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
 }
 
 .feature{
-    background:#eef5ff;
-    padding:18px;
-    border-radius:12px;
+    background:white;
+    border:1px solid #e5eefc;
+    border-radius:18px;
+    padding:22px;
+    box-shadow:
+    0 5px 15px rgba(0,0,0,.06),
+    0 12px 30px rgba(21,101,192,.08);
+}
+
+.feature h3{
+    color:#1565c0;
+    margin-bottom:10px;
+}
+
+.feature p{
+    color:#555;
 }
 
 .buttons{
     text-align:center;
-    margin-top:30px;
+    margin-top:40px;
 }
 
 .btn{
     display:inline-block;
-    margin:8px;
-    padding:14px 24px;
+    margin:10px;
+    padding:14px 28px;
     background:#1565c0;
     color:white;
     text-decoration:none;
-    border-radius:10px;
+    border-radius:12px;
     font-weight:bold;
+    box-shadow:0 8px 20px rgba(21,101,192,.25);
 }
 
 .btn:hover{
     background:#0d47a1;
 }
 
-footer{
+.footer{
     text-align:center;
-    padding:30px;
+    padding:35px 20px;
     color:#666;
 }
+
+@media(max-width:600px){
+
+.hero h1{
+    font-size:38px;
+}
+
+.logo{
+    width:130px;
+}
+
+.btn{
+    display:block;
+    width:100%;
+    max-width:320px;
+    margin:10px auto;
+}
+
+}
+
 </style>
 
 </head>
 
 <body>
 
-<div class="hero">
-    <img src="app-logo.png" class="logo">
-    <h1>AreaBill</h1>
-    <p class="subtitle">Professional Sqft & Bill Calculator</p>
-</div>
+<section class="hero">
+
+<img src="app-logo.png" alt="AreaBill Logo" class="logo">
+
+<h1>AreaBill</h1>
+
+<p class="subtitle">
+Professional Sqft & Bill Calculator
+</p>
+
+</section>
 
 <div class="container">
 
 <div class="card">
-    <h2>About AreaBill</h2>
-    <p>
-        AreaBill helps professionals calculate area measurements,
-        generate bills, manage customer records, share PDFs and images,
-        and securely back up data through premium cloud services.
-    </p>
+
+<h2>About AreaBill</h2>
+
+<p>
+AreaBill is designed for professionals, businesses, workshops, fabricators,
+construction teams and manufacturers who need a fast and reliable way to
+calculate area measurements, generate bills, manage customers and share
+results with clients.
+</p>
+
 </div>
 
 <div class="features">
 
 <div class="feature">
-    <h3>Area Calculation</h3>
-    <p>Calculate square feet quickly and accurately.</p>
+<h3>Area Calculation</h3>
+<p>
+Calculate square feet quickly and accurately for projects of any size.
+</p>
 </div>
 
 <div class="feature">
-    <h3>Billing System</h3>
-    <p>Create professional bills from calculated areas.</p>
+<h3>Multi-Unit Support</h3>
+<p>
+Work with square feet, square meters and square yards in one application.
+</p>
 </div>
 
 <div class="feature">
-    <h3>PDF & Image Sharing</h3>
-    <p>Share results instantly with customers.</p>
+<h3>Billing System</h3>
+<p>
+Generate professional bills directly from calculated areas.
+</p>
 </div>
 
 <div class="feature">
-    <h3>Cloud Backup</h3>
-    <p>Premium users can securely back up data to the cloud.</p>
+<h3>PDF & Image Sharing</h3>
+<p>
+Share calculations and bills instantly with customers.
+</p>
+</div>
+
+<div class="feature">
+<h3>Customer History</h3>
+<p>
+Store and manage previous calculations and billing records efficiently.
+</p>
+</div>
+
+<div class="feature">
+<h3>Cloud Backup</h3>
+<p>
+Premium users can securely back up and synchronize their data.
+</p>
 </div>
 
 </div>
 
 <div class="buttons">
-    <a class="btn" href="privacy-policy.html">Privacy Policy</a>
-    <a class="btn" href="delete-account.html">Delete Account</a>
-    <a class="btn" href="terms.html">Terms of Use</a>
-</div>
+
+<a class="btn" href="privacy-policy.html">
+Privacy Policy
+</a>
+
+<a class="btn" href="delete-account.html">
+Delete Account
+</a>
+
+<a class="btn" href="terms.html">
+Terms of Use
+</a>
 
 </div>
 
-<footer>
-    © 2026 Raxor Labs • AreaBill
-</footer>
+</div>
+
+<div class="footer">
+© 2026 Raxor Labs • AreaBill
+</div>
 
 </body>
 </html>
